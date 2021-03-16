@@ -68,13 +68,15 @@ public class bai6 {
      System.out.println("\nPhần tử lớn nhất trong mảng :"+ maxValue);
     //Đếm các phần tử là số chính phương
      System.out.println("Cac so chinh phuong thoa man:");
-
+            int sl=0;
             for(int i=0; i<n; i++) {
 
                      if (checkPerfectSquare(array[i])) {
+                         sl++;
 				System.out.print("\t" +array[i]);
 			} 
             }
+            System.out.println("\nCó " + sl +" sô chính phương trong mảng");
     //Đếm các phần tử là số chính phương
 
     for (int i = 0; i < n - 1; i++) {
